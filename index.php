@@ -53,7 +53,7 @@
                             </tr>
                             <tr>
                                  <?php
-                                 $ObjConn = new  Calificaciones();
+                                 $ObjCon = new Calificacion();
                                  $ObjConn->Conectar(); // Conectamos
                                  $ObjConn->PaguinacionCalificaciones();
                                 ?>

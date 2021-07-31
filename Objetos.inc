@@ -6,15 +6,15 @@ class Calificaciones{
   protected $sql;
   protected $consulta;
 
-  public function __cosntruct(){
+  public function _cosntruct(){
      $this->Coneccion = ""; // Coneccion
      $this->BasedeDatos = "";   // Base de datos
      $this->sql = ""; // query
      $this->consulta = ""; // Resultado de la cosulta
   }
 
-  public  function conectar(){
-     $this->Coneccion = mysqli_connect("localhost", "Timothy", "riley1998","Calificaciones");
+  public function conectar(){
+     $this->Coneccion = mysqli_connect("localhost", "Timothy", "123456","Calificaciones");
 
      if (!$this->Coneccion)
        die ("<h3>*** ERROR al conectar... :(-{ </h3>");
